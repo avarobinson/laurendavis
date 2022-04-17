@@ -1,0 +1,93 @@
+/* General */
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Landing page */
+.landing-body {
+    background: url('images/butterflies.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+  #landing-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255); /*white text*/
+    font-weight: bold
+}
+
+/* About page */
+/* .about-body {
+    background: url('images/lbdavis.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+} */
+.about-name {
+    font-weight: bolder;
+}
+
+.about-desc {
+    margin: 20px;
+}
+
+.about-body {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* TODO: for small medium device and below set the margin and boarder to 0 to fill the screen */
+@media (max-widht: 992px) {
+    .about-col {
+        margin: 0px;
+        padding: 0px;
+    }
+    .about-card {
+        margin-top: 0rem!important;
+        margin-bottom: 0rem!important;
+    }
+}
+
+/* Large devices and above */
+@media (min-width: 992px){
+    .about-header-img {
+        background: url(bg-1.jpg);
+        /* width: 50%;
+        position: absolute;
+        left: 0px;
+        height: 100%; */
+    }
+    .about-card {
+        margin-top: 3rem!important;
+        margin-bottom: 3rem!important;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    }
+    .about-body {
+        /* background: url('images/aboutHeadshot.jpeg') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+}
+
+/* Services page */
+.services-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255); /*white text*/
+    font-weight: bold
+}
+
+/* Blog page */
+
+/* Contact page */
