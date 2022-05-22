@@ -61,19 +61,34 @@
     border-color: rgb(255, 255, 255, 0) !important;
 }
 
-@media (max-width: 992px) {
-    .home-middle {
-        display: none;
-    }
-}
-
-@media (min-width: 992px){
-    .home-top {
-        display: none;
-    }
-}
-
 /* Landing page */
+
+/* Small devices and below */
+@media (max-width: 992px) {
+    #landing-title {
+        font-size: 13vw;
+        font-style: normal !important;
+    }
+
+    #landing-description { 
+        padding-top: 30px;
+        font-size: 6vw;
+        font-style: italic !important; 
+    }
+}
+
+/* Large devices and above */
+@media (min-width: 992px){
+    #landing-title {
+        font-size: 5.0vw;
+    }
+
+    #landing-description { 
+        padding-top: 30px;
+        font-size: 2.5vw;
+    }
+}
+
 .landing-body {
     background: url('images/butterflies.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -82,15 +97,19 @@
     -o-background-size: cover;
 }
 
-  #landing-title{
+#landing-title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgba(255, 255, 255, 0.734); /*white text*/
+    color: rgba(255, 255, 255, 0.824); /*white text*/
     /* font-weight: bold; */
     font-style: italic;
-    font-size: 6.5vw;
+}
+
+#landing-description {
+    font-family: 'Libre Baskerville', serif !important;
+    font-style: normal;
 }
 
 /* About page */
