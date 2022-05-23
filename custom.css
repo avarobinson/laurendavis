@@ -256,26 +256,36 @@
 /* Contact page */
 
 .contact-body {
-    font-size: 1.45rem;
+    font-size: 1.3rem;
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 40px;
+    margin-bottom: 80px;
     /* font-family: 'Montserrat', sans-serif; */
 }
 
 .contact-img {
-    max-width: 300px;
-    max-height: 300px;
-    width: 30vh;
-    height: 30vh;
+    max-width: 100%;
+    max-height: 100%;
+    width: 20vh;
+    height: auto;
     border-radius: 50%;
 }
 
 .email-title {
     font-weight: bolder;
     margin-bottom: 0px !important;
+}
+
+#email-link {
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#email-link:hover {
+    color: lightblue;
 }
 
 .phone-title {
@@ -285,13 +295,12 @@
 }
 
 .contact-info {
-    font-size: 1.35rem;
+    font-size: 1.15rem;
 }
 
 .contact-text {
     text-align: left;
     align-items: left;
-    padding-top: 30px;
 }
 
 .contact-image {
@@ -307,18 +316,25 @@
 }
 
 .phone {
-    overflow: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
   display: block;
-  line-height: 1em; /* a */
-  max-height: 2em; /* a x number of line to show (ex : 2 line)  */
+}
+
+#contact-link {
+    color: black;
+    text-decoration: none;
+}
+
+#contact-link:hover{
+    color:lightblue;
 }
 
 @media (min-width: 992px) {
     .contact-info {
-        margin-left: 150px;
-        margin-right: 150px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
     .contact-page {
         margin-top: 100px;
@@ -329,6 +345,7 @@
     .contact-text {
         padding-left: 50px;
         padding-right: 50px;
+        font-size: 1rem !important;
     }
     .contact-page {
         margin-top: 0px;
