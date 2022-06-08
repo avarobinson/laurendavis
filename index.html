@@ -15,17 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,600&family=Gothic+A1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="text/javascript" src="js/custom.js"></script>
     <style>
       body {
         font-family: 'Libre Baskerville', serif;
         font-size: 20px;
-      }
-      .material-symbols-outlined {
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
       }
     </style>
   </head>
@@ -40,12 +34,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto nav-fill w-100">
               <li class="nav-item">
-                <a class="nav-link nav-link-index" href="index.html"><span class="material-symbols-outlined">
+                <a class="nav-link active nav-link-index" aria-current="page" href="index.html"><span class="material-symbols-outlined">
                   circle
                   </span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-index" aria-current="page" href="about.html">ABOUT</a>
+                <!-- <span onclick="transitionToPage('about.html')" class="nav-link nav-link-index">ABOUT</span> -->
+                <a href="about.html" class="nav-link nav-link-index">ABOUT</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link-index" href="services.html">SERVICES</a>
